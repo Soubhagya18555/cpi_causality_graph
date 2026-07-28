@@ -1,5 +1,16 @@
 #!/usr/bin/env node
 
+export * from "./alt_resolver.js";
+export * from "./causality_builder.js";
+export * from "./cpi_extractor.js";
+export * from "./dot_exporter.js";
+export * from "./exporter.js";
+export * from "./graph_types.js";
+export * from "./instruction_decoder.js";
+export * from "./path_finder.js";
+export * from "./risk_analyzer.js";
+export * from "./timeline.js";
+
 import { Connection, VersionedTransactionResponse } from "@solana/web3.js";
 import { resolveAccountKeys } from "./alt_resolver.js";
 import { buildCausalityGraph } from "./causality_builder.js";
